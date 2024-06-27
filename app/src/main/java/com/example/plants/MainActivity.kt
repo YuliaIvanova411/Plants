@@ -41,9 +41,9 @@ class MainActivity : AppCompatActivity() {
             recycler.adapter = adapter
         addButton.setOnClickListener{
             //складываем в плант растения по очереди из списка, начиная с нулевой позиции)
-            val plantNumber = index + 1
+            val plantIndex = index + 1
             if(index > 5) index = 0
-            val plant = Plant(imageIdList[index], "plant + $plantNumber")
+            val plant = Plant(imageIdList[index], "plant $plantIndex")
             //и передаем все это дело в адаптер
             adapter.addPlant(plant)
             index++
