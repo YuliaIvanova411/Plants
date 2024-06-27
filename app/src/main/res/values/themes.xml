@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--     TODO че-то сделать, чтоб применялась нормальная тема-->
 
-    <style name="Theme.Plants" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Plants" parent="android:Theme.Material.Light.NoActionBar">
+    <item name="colorPrimary">@color/green</item>
+    <item name="colorPrimaryDark">@color/ltgreen</item>
+    <item name="colorAccent">@color/purple</item>
+    </style>
 </resources>
