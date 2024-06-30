@@ -13,7 +13,7 @@ class PlantsAdapter : RecyclerView.Adapter<PlantsAdapter.PlantHolder>() {
         val binding = PlantItemBinding.bind(item)
         fun bind (plant: Plant) = with(binding) {
             image.setImageResource(plant.imageId)
-            title.text = plant.title
+            photoTitle.text = plant.title
         }
 
     }
